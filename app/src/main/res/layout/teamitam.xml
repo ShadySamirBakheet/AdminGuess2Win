@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backitem"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/conlogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="40dp"
+        android:elevation="12dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/nav_header_desc"
+            android:id="@+id/imagegteamlogo"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtteamname"
+        android:layout_toRightOf="@+id/conlogo"
+        android:text="@string/app_name"
+        android:textColor="#fff"
+        android:layout_margin="15dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtteamcountry"
+        android:layout_toRightOf="@+id/conlogo"
+        android:layout_below="@+id/txtteamname"
+        android:textColor="#fff"
+        android:text="@string/app_name"
+        android:layout_marginLeft="25dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnremoveTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/ic_remove"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:layout_margin="8dp"/>
+
+</RelativeLayout>

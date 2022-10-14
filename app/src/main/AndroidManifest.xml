@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="shady.samir.adminetwak3kora">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoadmin"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logoadmin"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LogInSystem.AdminsActivity" />
+        <activity android:name=".LogInSystem.SetNewPasswordActivity" />
+        <activity
+            android:name=".LogInSystem.AddAdminActivity"
+            android:label="Add Admin" />
+        <activity
+            android:name=".LogInSystem.ResetPasswordActivity"
+            android:label="Reset Password" />
+        <activity
+            android:name=".LogInSystem.ConformMessageActivity"
+            android:label="Conform Code" />
+        <activity
+            android:name=".LogInSystem.ChangePasswordActivity"
+            android:label="Change Password" />
+        <activity
+            android:name=".LogInSystem.SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AddActivities.AddTeamToLeagueActivity" />
+        <activity android:name=".AddActivities.ResultsMatchActivity" />
+        <activity
+            android:name=".LogInSystem.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AddActivities.AddHelperActivity" />
+        <activity android:name=".AddActivities.AddSeasonActivity" />
+        <activity android:name=".AddActivities.AddMonthActivity" />
+        <activity android:name=".AddActivities.AddWeekActivity" />
+        <activity android:name=".AddActivities.AddAwardActivity" />
+        <activity android:name=".AddActivities.AddMatchActivity" />
+        <activity android:name=".AddActivities.AddTeamActivity" />
+        <activity android:name=".AddActivities.AddLeagueActivity" />
+        <activity
+            android:name=".MainActivities.HomeFiles.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

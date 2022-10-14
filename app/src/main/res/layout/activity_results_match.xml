@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivities.ResultsMatchActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtteamone"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Team One"/>
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spaceone"
+                android:gravity="center"
+                android:text="❌"
+                android:textSize="18dp"
+                android:layout_toRightOf="@+id/txtteamone"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtteamtwo"
+                android:text="Team Two"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/spaceone"/>
+
+            <NumberPicker
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/scoreteamone"
+                android:gravity="center"
+                android:layout_below="@+id/txtteamone"/>
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/scorespaceone"
+                android:text="❌"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:layout_marginTop="80dp"
+                android:layout_toRightOf="@+id/txtteamone"
+                android:layout_below="@+id/spaceone"/>
+            <NumberPicker
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/scoretxtteamtwo"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/spaceone"
+                android:layout_below="@+id/txtteamtwo"/>
+
+            <Button
+                android:id="@+id/btnsave"
+                android:layout_width="225dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scoretxtteamtwo"
+                android:background="@drawable/btn_back"
+                android:drawableEnd="@drawable/ic_save"
+                android:text="Save Score"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

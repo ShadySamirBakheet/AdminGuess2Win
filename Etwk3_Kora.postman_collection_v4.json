@@ -1,0 +1,1008 @@
+{
+	"info": {
+		"_postman_id": "2488bae5-5a56-41a5-bdcc-95b271c72f3c",
+		"name": "Etwk3_Kora",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44392/api/Leagues/GetLeagues/en",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ImageFile",
+							"type": "file",
+							"src": "/C:/Users/AlRomani/OneDrive/Desktop/product_1.jpg"
+						},
+						{
+							"key": "NameAR",
+							"value": "الدوري تيست",
+							"type": "text"
+						},
+						{
+							"key": "NameEn",
+							"value": "testtest",
+							"type": "text"
+						},
+						{
+							"key": "StartDate",
+							"value": "30-5-2020",
+							"type": "text"
+						},
+						{
+							"key": "EndDate",
+							"value": "15-10-2020",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Leagues/GetLeagues/en",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Leagues",
+						"GetLeagues",
+						"en"
+					]
+				},
+				"description": "Get All Leagues in specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Account/LoginWithFacebook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Alromani Rashad\",\r\n    \"ClientId\": \"asd123asd123asd123\",\r\n    \"Image\": \"ahfkjashfkjahfjhakjfhsjdkhfjhj\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Account/LoginWithFacebook",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Account",
+						"LoginWithFacebook"
+					]
+				},
+				"description": "Login & Register with Facebook"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Teams/en/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "NameEn",
+							"value": "testtest",
+							"type": "text"
+						},
+						{
+							"key": "NameAR",
+							"value": "تيست",
+							"type": "text"
+						},
+						{
+							"key": "ImageFile",
+							"value": null,
+							"type": "file"
+						},
+						{
+							"key": "CountryAr",
+							"value": "انجلترا",
+							"type": "text"
+						},
+						{
+							"key": "CountryEn",
+							"value": "England",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Teams/en/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Teams",
+						"en",
+						"2"
+					]
+				},
+				"description": "Get Team By Id in specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Teams/GetTeams/en",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "NameEn",
+							"value": "testtest",
+							"type": "text"
+						},
+						{
+							"key": "NameAR",
+							"value": "تيست",
+							"type": "text"
+						},
+						{
+							"key": "ImageFile",
+							"value": null,
+							"type": "file"
+						},
+						{
+							"key": "CountryAr",
+							"value": "انجلترا",
+							"type": "text"
+						},
+						{
+							"key": "CountryEn",
+							"value": "England",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Teams/GetTeams/en",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Teams",
+						"GetTeams",
+						"en"
+					]
+				},
+				"description": "Get All Teams in specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Leagues/en/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ImageFile",
+							"value": null,
+							"type": "file"
+						},
+						{
+							"key": "NameAR",
+							"value": "الدوري تيست",
+							"type": "text"
+						},
+						{
+							"key": "NameEn",
+							"value": "testtest",
+							"type": "text"
+						},
+						{
+							"key": "StartDate",
+							"value": "30-5-2020",
+							"type": "text"
+						},
+						{
+							"key": "EndDate",
+							"value": "15-10-2020",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Leagues/en/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Leagues",
+						"en",
+						"2"
+					]
+				},
+				"description": "Get League by Id in specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Teams/GetTeamsByLeague/en/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Teams/GetTeamsByLeague/en/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Teams",
+						"GetTeamsByLeague",
+						"en",
+						"2"
+					]
+				},
+				"description": "Get Teams by League Id in specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Awards/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NameAr\":\"المركز الثالث\",\r\n    \"NameEn\": \"Third Place\",\r\n    \"FromPoint\": 5,\r\n    \"ToPoint\": 10,\r\n    \"Type\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Awards/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Awards",
+						""
+					]
+				},
+				"description": "Add New Award"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Awards/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Awards/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Awards",
+						""
+					]
+				},
+				"description": "Get All Awards"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Awards/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Awards/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Awards",
+						"1"
+					]
+				},
+				"description": "Get One Award"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Awards/ar/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Awards/ar/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Awards",
+						"ar",
+						"1"
+					]
+				},
+				"description": "Get One Award in specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Awards/GetAwards/ar/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Awards/GetAwards/ar/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Awards",
+						"GetAwards",
+						"ar",
+						""
+					]
+				},
+				"description": "Get All Awards in specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Awards/4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"nameAr\": \"22المركز الاختبار\",\r\n    \"nameEn\": \"Test Place 22\",\r\n    \"fromPoint\": 5,\r\n    \"toPoint\": 10,\r\n    \"type\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Awards/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Awards",
+						"4"
+					]
+				},
+				"description": "Update Award"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Awards/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Awards/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Awards",
+						"4"
+					]
+				},
+				"description": "Delete Award"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Helpers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TitleAr\": \"القاعدة الثانية\",\r\n    \"TitleEn\": \"Second Rule\",\r\n    \"DescriptionAr\": \"أوعى تخم عشان هجيبك\",\r\n    \"DescriptionEn\": \"Don't be cleaver to much\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Helpers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Helpers"
+					]
+				},
+				"description": "Add new Helper"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Helpers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Helpers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Helpers"
+					]
+				},
+				"description": "Get All Helpers"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Helpers/GetHeplers/ar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Helpers/GetHeplers/ar",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Helpers",
+						"GetHeplers",
+						"ar"
+					]
+				},
+				"description": "Get All Helpers in specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Helpers/ar/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Helpers/ar/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Helpers",
+						"ar",
+						"1"
+					]
+				},
+				"description": "Get one helper in specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Helpers/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Helpers/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Helpers",
+						"1"
+					]
+				},
+				"description": "Get one helper"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Helpers/3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 3,\r\n    \"TitleAr\": \"22القاعدة الاختبار\",\r\n    \"TitleEn\": \"Test Rule22\",\r\n    \"DescriptionAr\": \"أوعى تخم عشان هجيبك\",\r\n    \"DescriptionEn\": \"Don't be cleaver to much\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Helpers/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Helpers",
+						"3"
+					]
+				},
+				"description": "Update helper"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Helpers/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Helpers/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Helpers",
+						"3"
+					]
+				},
+				"description": "delete helper"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Matches",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Date\": \"2020-08-08\",\r\n    \"Time\": \"2020-08-08T23:00:00\",\r\n    \"IsStarted\": false,\r\n    \"IsEnded\": false,\r\n    \"NoOfFirstTeamGoals\": null,\r\n    \"NoOfSecondTeamGoals\": null,\r\n    \"FirstTeamId\": 1,\r\n    \"SecondTeamId\": 2,\r\n    \"LeagueId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Matches",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Matches"
+					]
+				},
+				"description": "Add new match"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Matches?date=2020-08-08",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Matches?date=2020-08-08",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Matches"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2020-08-08"
+						}
+					]
+				},
+				"description": "Get all matches by date"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Matches/GetMatchs/en?date=2020-08-08",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Matches/GetMatchs/en?date=2020-08-08",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Matches",
+						"GetMatchs",
+						"en"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2020-08-08"
+						}
+					]
+				},
+				"description": "Get all matches in a specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Matches/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Matches/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Matches",
+						"2"
+					]
+				},
+				"description": "Get one match"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Matches/en/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Matches/en/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Matches",
+						"en",
+						"2"
+					]
+				},
+				"description": "get one match in a specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Matches/3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 3,\r\n    \"Date\": \"2020-08-09\",\r\n    \"Time\": \"2020-08-08T20:00:00\",\r\n    \"IsStarted\": false,\r\n    \"IsEnded\": false,\r\n    \"NoOfFirstTeamGoals\": null,\r\n    \"NoOfSecondTeamGoals\": null,\r\n    \"FirstTeamId\": 1,\r\n    \"SecondTeamId\": 2,\r\n    \"LeagueId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Matches/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Matches",
+						"3"
+					]
+				},
+				"description": "Update match"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/MatchesExpectations",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserID\": \"8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb\",\r\n    \"NumberGoolOfTeem1\": 4,\r\n    \"NumberGoolOfTeem2\": 1,\r\n    \"MatchID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/MatchesExpectations",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"MatchesExpectations"
+					]
+				},
+				"description": "Add Expectation"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Home/GetAllMatch/en/8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb?date=2020-08-08",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Home/GetAllMatch/en/8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb?date=2020-08-08",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Home",
+						"GetAllMatch",
+						"en",
+						"8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2020-08-08"
+						}
+					]
+				},
+				"description": "Get All matches with user expectation in specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Home/GetMatch/en/2/8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Home/GetMatch/en/2/8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Home",
+						"GetMatch",
+						"en",
+						"2",
+						"8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb"
+					]
+				},
+				"description": "Get one match with user expectation in specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Home/GetLeagueMatches/en/1/8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb?date=2020-08-08",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Home/GetLeagueMatches/en/1/8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb?date=2020-08-08",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Home",
+						"GetLeagueMatches",
+						"en",
+						"1",
+						"8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2020-08-08"
+						}
+					]
+				},
+				"description": "Get All League Matches in specific language with user expect"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Home/GetMatch/en/2/8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Home/GetMatch/en/2/8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Home",
+						"GetMatch",
+						"en",
+						"2",
+						"8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb"
+					]
+				},
+				"description": "get one match in specific language with user expect"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Home/GetAllMatch/en/8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb?date=2020-08-08",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Home/GetAllMatch/en/8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb?date=2020-08-08",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Home",
+						"GetAllMatch",
+						"en",
+						"8ee2d8d4-01c2-4da0-bbde-071a0a1c8dfb"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2020-08-08"
+						}
+					]
+				},
+				"description": "get all matches in specific language with user expect"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Home/PutPoint/2/4/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Home/PutPoint/2/4/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Home",
+						"PutPoint",
+						"2",
+						"4",
+						"1"
+					]
+				},
+				"description": "post match result {matchID}, {Team 1}, {Team 2}"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

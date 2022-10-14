@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivities.AddHelperActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/titleAr"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Title Ar"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/titleEn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Title En"
+                android:layout_below="@+id/titleAr"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/helperAr"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Helper Ar"
+                android:inputType="textMultiLine"
+                android:layout_below="@+id/titleEn"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/helperEn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/helperAr"
+                android:hint="Enter Helper En"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/helperEn">
+
+                <Button
+                    android:id="@+id/btnsave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_back"
+                    android:drawableEnd="@drawable/ic_save"
+                    android:layout_margin="10dp"
+                    android:textColor="#fff"
+                    android:text="Save"/>
+
+                <Button
+                    android:id="@+id/btndelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="Delete"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_back"
+                    android:drawableEnd="@drawable/ic_delete"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

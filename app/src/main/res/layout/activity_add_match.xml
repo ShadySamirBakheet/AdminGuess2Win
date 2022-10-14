@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".AddActivities.AddMatchActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+
+
+            <Spinner
+                android:id="@+id/edtmatchLeague"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="League this Match"
+                android:layout_margin="16dp"
+               />
+
+            <Spinner
+                android:id="@+id/edtmatchTeamOne"
+                android:layout_width="match_parent"
+                android:layout_margin="16dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtmatchLeague"/>
+
+            <Spinner
+                android:id="@+id/edtmatchTeamTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_below="@+id/edtmatchTeamOne"/>
+
+            <TextView
+                android:id="@+id/edtmatchDateStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:layout_margin="32dp"
+                android:text="Parss to Select Date Match"
+                android:layout_below="@+id/edtmatchTeamTwo"/>
+
+
+            <LinearLayout
+                android:id="@+id/layoutbtns"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="32dp"
+                android:layout_below="@+id/edtmatchDateStart"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnsave"
+                    android:layout_marginRight="20dp"
+                    android:text="Save"
+                    android:background="@drawable/btn_back"
+                    android:drawableEnd="@drawable/ic_save"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:id="@+id/btndelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:background="@drawable/btn_back"
+                    android:drawableEnd="@drawable/ic_delete"
+                    android:textColor="#fff"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

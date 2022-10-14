@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Admin Etwak3 Kora</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Admin Etwk3 Kora</string>
+    <string name="menu_gallery">Rest Season</string>
+    <string name="menu_slideshow">Contact Developers</string>
+
+    <string name="home_second">Home Second</string>
+
+    <string name="me">PA Team\n\nDevelopers</string>
+    <string name="mewhats">What\'s app\n\n+20 120 709 0513</string>
+    <string name="meface">Facebook:\n\nShady Samir Bakheet</string>
+
+
+</resources>

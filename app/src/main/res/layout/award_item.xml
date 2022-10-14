@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backitem"
+    android:padding="5dp"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtawardname"
+        android:gravity="right"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="30dp"
+        android:text="Award"/>
+
+    <TextView
+        android:id="@+id/txtpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        android:text="Award"
+        android:layout_below="@+id/txtawardname"
+        />
+
+    <TextView
+        android:id="@+id/txttype"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:text="Award"
+        android:layout_below="@+id/txtawardname"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

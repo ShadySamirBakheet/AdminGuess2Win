@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".AddActivities.AddLeagueActivity">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<EditText
+				android:id="@+id/edtleauguenameAr"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="32dp"
+				android:layout_marginTop="64dp"
+				android:layout_marginEnd="32dp"
+				android:layout_marginBottom="32dp"
+				android:ems="10"
+				android:hint="Enter League Name Ar"
+				android:inputType="textPersonName"
+				app:layout_constraintBottom_toTopOf="@+id/edtleauguenameEn"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<EditText
+				android:id="@+id/edtleauguenameEn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="32dp"
+				android:layout_marginTop="32dp"
+				android:layout_marginEnd="32dp"
+				android:layout_marginBottom="32dp"
+				android:ems="10"
+				android:hint="Enter League Name En"
+				android:inputType="textPersonName"
+				app:layout_constraintBottom_toTopOf="@+id/imgleaguelogo"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/edtleauguenameAr"/>
+
+			<ImageView
+				android:id="@+id/imgleaguelogo"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:layout_marginStart="32dp"
+				android:layout_marginTop="32dp"
+				android:layout_marginEnd="32dp"
+				android:layout_marginBottom="32dp"
+				app:layout_constraintBottom_toTopOf="@+id/edtstaertdate"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/edtleauguenameEn"
+				android:src="@drawable/ic_add_image" />
+
+			<TextView
+				android:id="@+id/edtstaertdate"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="32dp"
+				android:layout_marginTop="32dp"
+				android:layout_marginEnd="32dp"
+				android:layout_marginBottom="32dp"
+				android:ems="10"
+				android:hint="Tap To Select Start Date"
+				android:gravity="center"
+				android:textSize="20dp"
+				app:layout_constraintBottom_toTopOf="@+id/edtenddate"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/imgleaguelogo" />
+
+			<TextView
+				android:id="@+id/edtenddate"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="32dp"
+				android:layout_marginTop="32dp"
+				android:layout_marginEnd="32dp"
+				android:layout_marginBottom="32dp"
+				android:ems="10"
+				android:gravity="center"
+				android:hint="Tap To Select End Date"
+				android:textSize="20dp"
+				app:layout_constraintBottom_toTopOf="@+id/layoutbtns"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/edtstaertdate" />
+
+
+			<LinearLayout
+				android:id="@+id/layoutbtns"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="32dp"
+				android:layout_marginEnd="16dp"
+				android:layout_marginBottom="64dp"
+				android:gravity="center"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/edtenddate">
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/btnsave"
+					android:layout_margin="10dp"
+					android:text="Save"
+					android:background="@drawable/btn_back"
+					android:drawableEnd="@drawable/ic_save"
+					android:textColor="#fff"/>
+
+				<Button
+					android:id="@+id/btndelete"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Delete"
+					android:layout_margin="10dp"
+					android:background="@drawable/btn_back"
+					android:drawableEnd="@drawable/ic_delete"
+					android:textColor="#fff"/>
+
+				<Button
+					android:id="@+id/btnaddmatch"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Add Match"
+					android:layout_margin="10dp"
+					android:background="@drawable/btn_back"
+					android:drawableEnd="@drawable/ic_add"
+					android:textColor="#fff"/>
+
+			</LinearLayout>
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

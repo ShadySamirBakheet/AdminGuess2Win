@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backitem"
+    android:padding="5dp"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_marginEnd="10dp"
+        android:text="in"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/conlogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="40dp"
+        android:layout_toEndOf="@+id/index"
+        android:elevation="12dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/nav_header_desc"
+            android:id="@+id/userprofileimage"
+            android:src="@mipmap/ic_launcher_round"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_toEndOf="@+id/conlogo"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_marginStart="10dp"
+        android:layout_toStartOf="@id/btnremoveTeam"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="User Name"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userPhone"
+        android:layout_toEndOf="@+id/conlogo"
+        android:layout_below="@+id/username"
+        android:textColor="#fff"
+        android:layout_marginStart="10dp"
+        android:layout_toStartOf="@id/btnremoveTeam"
+        android:layout_marginEnd="10dp"
+        android:textSize="18dp"
+        android:text="User Name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userscore"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/username"
+        android:textSize="18dp"
+        android:visibility="visible"
+        android:textColor="#fff"
+        android:layout_margin="15dp"
+        android:text="User Name"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnremoveTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/ic_remove"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:layout_margin="8dp"/>
+
+</RelativeLayout>

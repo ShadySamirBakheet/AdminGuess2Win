@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backitem"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:layout_marginLeft="10dp">
+
+    <TextView
+        android:id="@+id/txtteamone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        android:text="team One"/>
+
+    <TextView
+        android:id="@+id/spaceone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="❌"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/txtteamone"/>
+
+    <TextView
+        android:id="@+id/txtteamtwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:text="team Two"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/spaceone"/>
+
+    <TextView
+        android:id="@+id/txtisfinsh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finshed"
+        android:layout_marginTop="35dp"
+        android:textColor="#FF6F6F"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/txtscoreteamone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_margin="10dp"
+        android:text=""
+        android:textColor="#fff"
+        android:layout_below="@+id/txtteamone"/>
+
+    <TextView
+        android:id="@+id/spacetwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="❌"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/txtteamone"
+        android:layout_below="@+id/spaceone"/>
+
+    <TextView
+        android:id="@+id/txtscoreteamtwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtteamtwo"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/spaceone"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:text="dd/MM/yyyy hh:mm"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtscoreteamtwo"
+        android:layout_marginTop="-5dp" />
+
+</RelativeLayout>

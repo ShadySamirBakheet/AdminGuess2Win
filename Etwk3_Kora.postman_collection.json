@@ -1,0 +1,303 @@
+{
+	"info": {
+		"_postman_id": "2488bae5-5a56-41a5-bdcc-95b271c72f3c",
+		"name": "Etwk3_Kora",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44392/api/Leagues/GetLeagues/en",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ImageFile",
+							"type": "file",
+							"src": "/C:/Users/AlRomani/OneDrive/Desktop/product_1.jpg"
+						},
+						{
+							"key": "NameAR",
+							"value": "الدوري تيست",
+							"type": "text"
+						},
+						{
+							"key": "NameEn",
+							"value": "testtest",
+							"type": "text"
+						},
+						{
+							"key": "StartDate",
+							"value": "30-5-2020",
+							"type": "text"
+						},
+						{
+							"key": "EndDate",
+							"value": "15-10-2020",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Leagues/GetLeagues/en",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Leagues",
+						"GetLeagues",
+						"en"
+					]
+				},
+				"description": "Get All Leagues in specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Account/LoginWithFacebook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Alromani\",\r\n    \"ClientId\": \"asd123asd123\",\r\n    \"Image\": \"ahfkjashfkjahfjhakjfhsjdkhfjhj\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Account/LoginWithFacebook",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Account",
+						"LoginWithFacebook"
+					]
+				},
+				"description": "Login & Register with Facebook"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Teams/en/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "NameEn",
+							"value": "testtest",
+							"type": "text"
+						},
+						{
+							"key": "NameAR",
+							"value": "تيست",
+							"type": "text"
+						},
+						{
+							"key": "ImageFile",
+							"value": null,
+							"type": "file"
+						},
+						{
+							"key": "CountryAr",
+							"value": "انجلترا",
+							"type": "text"
+						},
+						{
+							"key": "CountryEn",
+							"value": "England",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Teams/en/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Teams",
+						"en",
+						"2"
+					]
+				},
+				"description": "Get Team By Id in specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Teams/GetTeams/en",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "NameEn",
+							"value": "testtest",
+							"type": "text"
+						},
+						{
+							"key": "NameAR",
+							"value": "تيست",
+							"type": "text"
+						},
+						{
+							"key": "ImageFile",
+							"value": null,
+							"type": "file"
+						},
+						{
+							"key": "CountryAr",
+							"value": "انجلترا",
+							"type": "text"
+						},
+						{
+							"key": "CountryEn",
+							"value": "England",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Teams/GetTeams/en",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Teams",
+						"GetTeams",
+						"en"
+					]
+				},
+				"description": "Get All Teams in specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Leagues/en/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ImageFile",
+							"value": null,
+							"type": "file"
+						},
+						{
+							"key": "NameAR",
+							"value": "الدوري تيست",
+							"type": "text"
+						},
+						{
+							"key": "NameEn",
+							"value": "testtest",
+							"type": "text"
+						},
+						{
+							"key": "StartDate",
+							"value": "30-5-2020",
+							"type": "text"
+						},
+						{
+							"key": "EndDate",
+							"value": "15-10-2020",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Leagues/en/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Leagues",
+						"en",
+						"2"
+					]
+				},
+				"description": "Get League by Id in specific language"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Teams/GetTeamsByLeague/en/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Teams/GetTeamsByLeague/en/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Teams",
+						"GetTeamsByLeague",
+						"en",
+						"2"
+					]
+				},
+				"description": "Get Teams by League Id in specific language"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

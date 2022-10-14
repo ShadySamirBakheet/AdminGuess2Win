@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivities.HomeFiles.ui.slideshow.SlideshowFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="24dp"
+                android:src="@drawable/me_logo"/>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:layout_margin="10dp"
+                android:text="@string/me"
+                android:gravity="center"
+                android:textColor="#35007E"
+                android:textSize="24dp"/>
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:textColor="#35007E"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:layout_margin="10dp"
+                android:text="shady.samir.1997@gmail.com"
+                android:gravity="center"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:textColor="#35007E"
+                android:layout_margin="10dp"
+                android:text="https://play.google.com/store/apps/dev?id=8294723716541769768"
+                android:gravity="center"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text4"
+                android:layout_margin="10dp"
+                android:textColor="#35007E"
+                android:text="@string/mewhats"
+                android:gravity="center"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:layout_margin="20dp"
+                android:textColor="#35007E"
+                android:text="@string/meface"
+                android:gravity="center"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
